@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/indexInput.css" />
+    <link rel="shortcut icon" href="../sources/ico.ico" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"></script>
+
+    <title>Giornomdex</title>
+  </head>
+
+  <body class="bodyclass">
+    <header>
+      <section class="container-title">
+        <div class="containerHeader">
+          <div class="title">
+            <img src="../sources/title.png" alt="" />
+          </div>
+          <div class="buscador">
+            <div class="main">
+              <input required="" type="text" class="input" id="pokeinput" />
+              <label>
+                <span style="transition-delay: 0ms; left: 0px">P</span>
+                <span style="transition-delay: 75ms; left: 15px">o</span>
+                <span style="transition-delay: 150ms; left: 31px">k</span>
+                <span style="transition-delay: 225ms; left: 43px">e</span>
+                <span style="transition-delay: 300ms; left: 59px">N</span>
+                <span style="transition-delay: 375ms; left: 76px">a</span>
+                <span style="transition-delay: 450ms; left: 92px">m</span>
+                <span style="transition-delay: 525ms; left: 116px">e</span>
+                <p
+                  style="
+                    position: absolute;
+                    left: -8px;
+                    top: -10px;
+                    font-size: 24px;
+                    margin: 10px;
+                    color: white;
+                    transition: 0.5s;
+                    pointer-events: none;
+                  "
+                >
+                  PokeName
+                </p>
+              </label>
+            </div>
+            <div class="btnbuscar">
+              <button id="pokebtn" class="pokeball"></button>
+            </div>
+          </div>
+          <div class="pruebapokedex">
+            <a href="../html/pokedexmode.html">Pokedex view (SOLO PC)</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="caontainerMain">
+        <div class="subContainerMain">
+          <!--CONTENEDOR IZQUIERDA-->
+          <div class="leftContainer">
+            <div class="bgID"></div>
+            <div class="containerTypeName">
+              <div id="type_poke"></div>
+              <div class="namePokemon"></div>
+            </div>
+          </div>
+          <!--CONTENEDOR IZQUIERDA-->
+
+          <!--CONTENEDOR DERECHA-->
+          <div class="rigthContainer">
+            <div class="imgPoke"></div>
+            <div class="statsContainer"></div>
+          </div>
+        </div>
+        <div class="subContainerStats">
+          <section class="caja-padre">
+            <div class="container">
+   
+              <div class="skills">
+                <div class="detalles">
+                  <span>Puntos de vida</span>
+                  <span class="spanHP"></span>
+                </div>
+                <div class="menu">
+                  <div id="hp-menu"></div>
+                </div>
+              </div>
+    
+              <div class="skills">
+                <div class="detalles">
+                  <span>Ataque</span>
+                  <span class="spanATK"></span>
+                </div>
+                <div class="menu">
+                  <div id="atk-menu"></div>
+                </div>
+              </div>
+    
+              <div class="skills">
+                <div class="detalles">
+                  <span>Defensa</span>
+                  <span class="spanDEF"></span>
+                </div>
+                <div class="menu">
+                  <div id="def-menu"></div>
+                </div>
+              </div>
+    
+              <div class="skills">
+                <div class="detalles">
+                  <span>Velocidad</span>
+                  <span class="spanVEL"></span>
+                </div>
+                <div class="menu">
+                  <div id="vel-menu"></div>
+                </div>
+              </div>
+              
+              <div class="skills">
+                <div class="detalles">
+                  <span>Ataque especial</span>
+                  <span class="spanSATK"></span>
+                </div>
+                <div class="menu">
+                  <div id="satk-menu"></div>
+                </div>
+              </div>
+    
+              <div class="skills">
+                <div class="detalles">
+                  <span>Defensa especial</span>
+                  <span class="spanSDEF"></span>
+                </div>
+                <div class="menu">
+                  <div id="sdef-menu"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--<canvas id="barraStats" width="600" height="400"></canvas>-->
+        </div>
+      </section>
+    </main>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
