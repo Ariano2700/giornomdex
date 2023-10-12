@@ -76,7 +76,7 @@ function mostrarPokedex(pokesex) {
     const img = document.createElement("img");
     img.classList.add("img-type");
     img.classList.add(nametype);
-    img.src = `../sources/icon/${nametype}.svg`;
+    img.src = `sources/icon/${nametype}.svg`;
 
     tipoDiv.appendChild(img);
     type_poke.appendChild(tipoDiv);
