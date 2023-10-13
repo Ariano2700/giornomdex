@@ -4,15 +4,25 @@ const imgPoke = document.querySelector(".imgPoke");
 const namePokemon = document.querySelector(".namePokemon");
 const type_poke = document.getElementById("type_poke");
 const statsContainer = document.querySelector(".statsContainer");
+const pokeInput = document.getElementById("pokeinput");
 
 function pokepreview() {
   const randomPoke = Math.floor(Math.random() * (807 - 1) + 1);
   consumo(randomPoke);
 }
 pokepreview();
+
+pokeInput.addEventListener('keydown', function(event){
+  if(event.key === "Enter"){
+    event.preventDefault();
+    const pokename = pokeInput.value.toLowerCase();
+    consumo(pokename);
+  }
+})
+
 if (btnBuscar) {
   btnBuscar.addEventListener("click", function () {
-    const pokename = document.getElementById("pokeinput").value.toLowerCase();
+    const pokename = pokeInput.value.toLowerCase();
     consumo(pokename);
   });
 }
